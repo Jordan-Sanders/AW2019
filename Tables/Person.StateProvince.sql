@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [Person].[StateProvince] (
   [StateProvinceID] [int] IDENTITY,
   [StateProvinceCode] [nchar](3) NOT NULL,
-  [CountryRegionCode] [nvarchar](3) NOT NULL,
+  [CountryRegionCode] [nvarchar](6) NOT NULL,
   [IsOnlyStateProvinceFlag] [dbo].[Flag] NOT NULL CONSTRAINT [DF_StateProvince_IsOnlyStateProvinceFlag] DEFAULT (1),
   [Name] [dbo].[Name] NOT NULL,
   [TerritoryID] [int] NOT NULL,
