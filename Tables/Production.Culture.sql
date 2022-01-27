@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [Production].[Culture] (
-  [CultureID] [nchar](6) NOT NULL,
+  [CultureID] [nchar](10) NOT NULL,
   [Name] [dbo].[Name] NOT NULL,
   [ModifiedDate] [datetime] NOT NULL CONSTRAINT [DF_Culture_ModifiedDate] DEFAULT (getdate()),
   CONSTRAINT [PK_Culture_CultureID] PRIMARY KEY CLUSTERED ([CultureID])
