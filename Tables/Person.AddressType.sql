@@ -1,4 +1,4 @@
-﻿CREATE TABLE [Person].[AddressID] (
+﻿CREATE TABLE [Person].[AddressType] (
   [AddressTypeID] [int] IDENTITY,
   [AddressName] [dbo].[Name] NOT NULL,
   [rowguid] [uniqueidentifier] NOT NULL CONSTRAINT [DF_AddressType_rowguid] DEFAULT (newid()) ROWGUIDCOL,
