@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Person].[AddressType] (
   [AddressTypeID] [int] IDENTITY,
-  [Name] [dbo].[Name] NOT NULL,
+  [Address] [dbo].[Name] NOT NULL,
   [rowguid] [uniqueidentifier] NOT NULL CONSTRAINT [DF_AddressType_rowguid] DEFAULT (newid()) ROWGUIDCOL,
   [ModifiedDate] [datetime] NOT NULL CONSTRAINT [DF_AddressType_ModifiedDate] DEFAULT (getdate()),
   [CityName ] [varchar](50) NULL,
